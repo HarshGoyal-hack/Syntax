@@ -1,0 +1,74 @@
+<html>
+ <head>
+  <title>
+   Synchronizer
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link rel=" stylesheet" href="music.css" >
+ </head>
+ <body class="bg-gray-100 font-roboto">
+  <header class="bg-black text-white">
+   <div class="container mx-auto flex justify-between items-center py-4 px-6">
+    <div class="flex items-center">
+     <i class="fas fa-music text-2xl">
+     </i>
+     <span class="ml-2 text-xl font-bold">
+      Synchronizer
+     </span>
+    </div>
+    <div class="search-wrapper">
+        <form class="search-form" action="/search" method="get">
+            <input id = "harsh" type="text" name="query" placeholder="Search Instrument" aria-label="Search"  >
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <nav class="hidden md:flex space-x-6">
+     <a class="text-gray-300 hover:text-white" href="#">
+      Home
+     </a>
+     <a class="text-gray-300 hover:text-white" href="#">
+      Brands
+     </a>
+     <a class="text-gray-300 hover:text-white" href="#">
+      Instruments
+     </a>
+    </nav>
+    <div class="md:hidden">
+     <i class="fas fa-bars text-2xl">
+     </i>
+    </div>
+   </div>
+  </header>
+  <main class="container mx-auto text-center py-16 px-6">
+   <h1 class="text-4xl font-bold mb-4">
+    Quality Instruments for Musicians at Every Level
+   </h1>
+   <p class="text-lg mb-8">
+    Unleash Your Artistic Potential with State-of-the-Art Instruments Designed for Passionate Musicians.
+   </p>
+   <button class="bg-black text-white py-2 px-6 rounded-full">
+    Explore
+   </button>
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-12">
+    <div class="hov">
+       <a href="guitar.html" ><img alt="Ukulele" class="w-full h-48 object-cover rounded-lg" height="200" src="guitar.jpg" width="200"/></a>
+    </div>
+    <div class="hov" href="#">
+        <a href="piano.html" ><img alt="Drum set" class="w-full h-48 object-cover rounded-lg" src="piano.jpg"/></a>
+    </div>
+    <div class="hov">
+        <a href="panflute.html" ><img alt="Djembe drum" class="w-full h-48 object-cover rounded-lg" src="panflute.jpg"/></a>
+    </div>
+    <div class="hov">
+        <a href="drum.html" ><img alt="Electric guitar" class="w-full h-48 object-cover rounded-lg" src="drum.jpg"/></a>
+    </div>
+    <div class="hov">
+        <a href="Xylophone.html" ><img alt="Violin" class="w-full h-48 object-cover rounded-lg" src="Xyelophone.jpg"/></a>
+    </div>
+   </div>
+  </main>
+ </body>
+</html>

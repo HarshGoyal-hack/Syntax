@@ -1,0 +1,81 @@
+<html>
+ <head>
+  <title>
+   Virtual Guitar
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="flex flex-col items-center bg-white text-center p-4">
+  <h1 class="text-3xl font-bold mt-4">
+    Guitar
+  </h1>
+  <p class="text-lg text-gray-600 mt-2">
+   Learn to play guitar with the online virtual guitar!
+  </p>
+  <div class="relative mt-4">
+   <img alt="Acoustic guitar" class="w-full max-w-4xl" height="300" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-uSZtIKZJIzNoLQne08uvitzn.png?st=2024-09-05T18%3A46%3A10Z&amp;se=2024-09-05T20%3A46%3A10Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-04T21%3A36%3A37Z&amp;ske=2024-09-05T21%3A36%3A37Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=EoUNa8cOK4JrOp8NJO8HQiwAEvDHBaxnachqlNkC1dc%3D" width="800"/>
+   <div class="absolute top-1/2 right-10 transform -translate-y-1/2 bg-white border border-gray-300 rounded-lg p-4">
+    <h2 class="text-xl font-bold mb-2">
+     Chords
+    </h2>
+    <div class="flex flex-col items-start">
+     <div class="flex items-center mb-2">
+      <input class="mr-2" id="major" name="chord" type="radio"/>
+      <label class="mr-4" for="major">
+       Major
+      </label>
+      <input class="mr-2" id="minor" name="chord" type="radio"/>
+      <label class="mr-4" for="minor">
+       Minor
+      </label>
+      <input class="mr-2" id="7" name="chord" type="radio"/>
+      <label for="7">
+       7
+      </label>
+     </div>
+     <div class="flex items-center">
+      <input class="mr-2" id="A" name="note" type="radio"/>
+      <label class="mr-4" for="A">
+       A
+      </label>
+      <input class="mr-2" id="B" name="note" type="radio"/>
+      <label class="mr-4" for="B">
+       B
+      </label>
+      <input class="mr-2" id="C" name="note" type="radio"/>
+      <label class="mr-4" for="C">
+       C
+      </label>
+      <input class="mr-2" id="D" name="note" type="radio"/>
+      <label class="mr-4" for="D">
+       D
+      </label>
+      <input class="mr-2" id="E" name="note" type="radio"/>
+      <label class="mr-4" for="E">
+       E
+      </label>
+      <input class="mr-2" id="F" name="note" type="radio"/>
+      <label class="mr-4" for="F">
+       F
+      </label>
+      <input class="mr-2" id="G" name="note" type="radio"/>
+      <label for="G">
+       G
+      </label>
+     </div>
+    </div>
+   </div>
+  </div>
+  <p class="text-sm text-gray-500 mt-2">
+   Click/touch guitar to play
+  </p>
+ </body>
+</html>

@@ -1,0 +1,17 @@
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    margin-top: 18px;
+    margin-left: 500px;
+    border-radius: 50%;
+}
+#harsh{
+    border-top: 5%;
+    width:200px;
+    color: black;
+}
+.hov:hover
+{
+    cursor: pointer;
+}

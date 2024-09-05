@@ -1,0 +1,83 @@
+<html>
+<head>
+    <title>Virtual Xylophone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .xylophone {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .bar {
+            width: 40px;
+            height: 200px;
+            margin: 0 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            position: relative;
+        }
+        .bar::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            top: 20px;
+        }
+        .bar::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            bottom: 20px;
+        }
+        .red { background: #FF0000; }
+        .orange { background: #FF7F00; }
+        .yellow { background: #FFFF00; }
+        .green { background: #00FF00; }
+        .blue { background: #0000FF; }
+        .indigo { background: #4B0082; }
+        .violet { background: #8B00FF; }
+        .pink { background: #FF00FF; }
+    </style>
+</head>
+<body class="bg-white text-center">
+    <div class="mt-4">
+        <label for="notes" class="text-lg">Notes:</label>
+        <select id="notes" class="border border-gray-300 rounded px-2 py-1">
+            <option>English</option>
+        </select>
+    </div>
+    <div class="xylophone">
+        <div class="bar red">C</div>
+        <div class="bar orange">D</div>
+        <div class="bar yellow">E</div>
+        <div class="bar green">F</div>
+        <div class="bar blue">G</div>
+        <div class="bar indigo">A</div>
+        <div class="bar violet">B</div>
+        <div class="bar pink">C</div>
+        <div class="bar red">D</div>
+        <div class="bar orange">E</div>
+        <div class="bar yellow">F</div>
+        <div class="bar green">G</div>
+        <div class="bar blue">A</div>
+        <div class="bar indigo">B</div>
+        <div class="bar violet">C</div>
+    </div>
+    <div class="mt-4">
+        <p class="text-sm italic">Click/touch xylophone notes to play</p>
+        <p class="text-xs">(if using keyboard, press keys: 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, q, w, e, r, t)</p>
+    </div>
+    <script src="xylephone.js"></script>
+</body>
+</html>
